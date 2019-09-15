@@ -1,2 +1,61 @@
+{% set navs = [
+    {
+        title: 'Каталог',
+        links: ['Все товары', 'Снаряжение', 'Обувь', 'Одежда', 'Ремесленные товары']
+    }, {
+        title: 'Личный кабинет',
+        links: ['Войти', 'Регистрация', 'Корзина']
+    }, {
+        title: 'Помощь',
+        links: ['Как оплатить?', 'Как сделать заказ?', 'Доставка', 'Возврат', 'Гарантия', 'Вопрос-ответ']
+    }, {
+        title: 'О нас',
+        links: ['О компании', 'Блог', 'Новости', 'Сотрудничество', 'Контакты']
+    }
+] %}
+
 <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-row">
+                <div class="footer-col footer-col--md">
+                    {% for nav in navs %}
+                    <div class="footer-col__nav">
+                        <h4 class="footer-nav__title">{{ nav.title }}</h4>
+                        <ul class="footer-nav">
+                            {% for link in nav.links %}
+                            <li>
+                                <a href="#" class="footer-nav__link">{{ link }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="footer-col footer-col--lg">
+                    <a href="#" class="footer__logo">logo</a>
+                    <p class="footer__p">Фабрика Brandcamp</p>
+                    <p class="footer__p">ООО “АР5”, 428000, г.Чебоксары, проспект Ленина 7, пом. 19/3</p>
+                    <p class="footer__p footer__p--sm my-3">ИНН/ОГРН 2130190941/1172130010843</p>
+                    <div class="mb-4">
+                        <p class="footer__p"><a href="tel:8 800 550 35 69" class="footer__phone">8 800 550 35 69</a></p>
+                        <p class="footer__p"><a href="mailto:support@brandcamp.su" class="footer__email">support@brandcamp.su</a></p>
+                    </div>
+                    <ul class="list-default footer__list-s">
+                        <li><a href="#">vk</a></li>
+                        <li><a href="#">ing</a></li>
+                        <li><a href="#">odk</a></li>
+                        <li><a href="#">ytb</a></li>
+                        <li><a href="#">fb</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p class="footer__p">Все права защищены. 2017-2019 © Brandcamp</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>

@@ -1,16 +1,29 @@
-// stylelint-disable declaration-no-important, selector-list-comma-newline-after
-
+$h-color: #090909;
 //
 // Headings
 //
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $h-color;
+  text-decoration: none;
 
+  &:hover {
+    border-bottom-color: transparent;
+  }
 }
 
 h1, .h1 { }
-h2, .h2 { }
+h2, .h2 {
+  margin-bottom: 15px;
+  font-size: 34px;
+  line-height: 1.2;
+
+  &--bb {
+    display: inline-block;
+    border-bottom: 2px solid $blue;
+  }
+}
 h3, .h3 { }
 h4, .h4 { }
 h5, .h5 { }

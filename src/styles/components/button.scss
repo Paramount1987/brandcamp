@@ -1,4 +1,4 @@
-// stylelint-disable selector-no-qualifying-type
+$gray: #757575;
 
 //
 // Base styles
@@ -10,31 +10,26 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
+  padding: 5px 10px;
   border: 1px solid transparent;
+  font-size: 13px;
+  text-decoration: none;
+  transition: .15s ease-in;
 
   &:focus,
   &.focus {
     outline: 0;
   }
 
-  // Disabled comes first so active can properly restyle
-  &.disabled,
-  &:disabled {
-    opacity: .5;
-  }
+  &-gray {
+    border-color: $gray;
+    color: $gray;
 
-  // Opinionated: add "hand" cursor to non-disabled .btn elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    background-image: none;
-    background-color: #007bff;
-
+    &:hover,
     &:focus {
-
+      background-color: $blue;
+      border-color: $blue;
+      color: $white;
     }
   }
 }
@@ -43,43 +38,6 @@
 a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
-}
-
-
-//
-// Link buttons
-//
-
-// Make a button look and behave like a link
-.btn-link {
-  background-color: transparent;
-
-  &:focus,
-  &.focus {
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  &:disabled,
-  &.disabled {
-    pointer-events: none;
-  }
-
-  // No need for an active state here
-}
-
-//
-// Block button
-//
-
-.btn-block {
-  display: block;
-  width: 100%;
-
-  // Vertically space out multiple block buttons
-  + .btn-block {
-    margin-top: 5px;
-  }
 }
 
 // Specificity overrides

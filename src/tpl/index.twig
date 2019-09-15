@@ -1,10 +1,29 @@
-{% extends './inc/page.twig' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>brandcamp</title>
+        <link href="css/style.css?{{ date().getTime() }}" rel="stylesheet" />
+    </head>
+    <body>
+        {% set pages = [
+            { link: 'main', name: 'Главная' }
+        ] %}
 
-{% block content %}
-	<div class="container">
-		<h1>Webpack 3! Twig!</h1>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Brandcamp  страницы</h1>
 
-		<a href="components.html">Components!</a>
-	</div>
-
-{% endblock %}
+                <ul>
+                    {% for page in pages %}
+                        <li>
+                            <a href="{{ page.link }}.html" class="page-link">{{ page.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
