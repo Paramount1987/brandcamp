@@ -39,6 +39,7 @@ $gray_p: #505050;
       padding: 4px 8px;
       color: $white;
       font-size: 13px;
+      font-weight: 500;
     }
   }
 
@@ -48,6 +49,7 @@ $gray_p: #505050;
     &__item {
       color: $black;
       font-size: 22px;
+      font-weight: 600;
     }
   }
 
@@ -58,6 +60,7 @@ $gray_p: #505050;
     text-decoration: none;
     font-size: 15px;
     line-height: 1.5;
+    font-weight: 550;
     transition: .15s ease-in;
 
     &:hover {

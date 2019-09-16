@@ -36,10 +36,10 @@ $p-color: #7e7e7e;
     }
 
     &__title {
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
       color: $nav-title-color;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 550;
     }
 
     &__link {
@@ -80,7 +80,7 @@ $p-color: #7e7e7e;
 
   &__phone {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 550;
     color: $p-color;
     text-decoration: none;
   }
