@@ -1,0 +1,19 @@
+.pics-slider {
+  padding-bottom: 20px;
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    margin: 0 1px !important;
+    background-color: #c8c8c8;
+    opacity: 1;
+
+    &-active {
+      background-color: #252525
+    }
+  }
+}

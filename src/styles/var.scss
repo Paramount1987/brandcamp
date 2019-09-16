@@ -9,7 +9,8 @@ $spacers: map-merge((
         2: ($spacer * 2),
         3: ($spacer * 3),
         4: ($spacer * 4),
-        5: ($spacer * 5)
+        5: ($spacer * 5),
+        6: ($spacer * 6)
 ), $spacers);
 
 //
@@ -21,13 +22,16 @@ $white:    #fff !default;
 $black:    #000 !default;
 
 $blue:    #4a50e1 !default;
+
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+
+$red:     #fa0137 !default;
+$orange:  #ff7a32 !default;
+
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green:   #27cb99 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -86,3 +90,5 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$line-height-base:            1.5;
+$body-color:                  $black;

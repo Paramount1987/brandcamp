@@ -14,3 +14,5 @@ require('./utils/index');
 // components
 //----------------------------------------------
 require('./components/sliders/intro-slider');
+require('./components/sliders/multy-slider');
+require('./components/sliders/pics-slider');

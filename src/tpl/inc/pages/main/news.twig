@@ -1,0 +1,57 @@
+{% set items = [
+    {
+        pic: 'https://via.placeholder.com/260x260',
+        date: '01.02.2019',
+        title: 'Рассрочка от Тинькофф Банкна shop.brandcamp.su',
+        descr: 'Новый способ оплаты покупок на  сайте shop.brandcamp.su',
+    },
+    {
+        pic: 'https://via.placeholder.com/260x260',
+        date: '23.12.2019',
+        title: 'Розыгрыш Большого подарка!',
+        descr: 'Наш первый розыгрыш состоялся 23 декабря в 13-00 по МСК',
+    },
+    {
+        pic: 'https://via.placeholder.com/260x260',
+        date: '01.02.2019',
+        title: 'Рассрочка от Тинькофф Банкна shop.brandcamp.su',
+        descr: 'Новый способ оплаты покупок на  сайте shop.brandcamp.su',
+    },
+    {
+        pic: 'https://via.placeholder.com/260x260',
+        date: '01.02.2019',
+        title: 'Рассрочка от Тинькофф Банкна shop.brandcamp.su',
+        descr: 'Новый способ оплаты покупок на  сайте shop.brandcamp.su',
+    },
+    {
+        pic: 'https://via.placeholder.com/260x260',
+        date: '01.02.2019',
+        title: 'Рассрочка от Тинькофф Банкна shop.brandcamp.su',
+        descr: 'Новый способ оплаты покупок на  сайте shop.brandcamp.su',
+    },
+] %}
+
+<!-- Swiper -->
+<div class="multy-slider">
+    <div class="swiper-container js-multy-slider">
+        <div class="swiper-wrapper">
+            {% for item in items %}
+            <div class="swiper-slide">
+                <div class="card-pdct">
+                    <div class="card-pdct-top">
+                        <div class="card-pdct__bg" style="background-image: url('{{ item.pic }}')"></div>
+                    </div>
+                    <div class="card-pdct-body">
+                        <p class="card-pdct__date">{{ item.date }}</p>
+                        <a href="#" class="card-pdct__title card-pdct__title--md">{{ item.title }}</a>
+                        <p class="card-pdct__p card-pdct__p--md">{{ item.descr }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>

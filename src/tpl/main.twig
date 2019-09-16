@@ -1,6 +1,54 @@
 {% extends './inc/page.twig' %}
 
 {% block content %}
+<section class="mb-4">
     {% include "inc/pages/main/intro-slider.twig" %}
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex">
+            <a href="#" class="h2 h2--bb">Хиты продаж</a>
+        </div>
+    </div>
+    {% include "inc/pages/main/hits.twig" %}
+</section>
+
+<section class="mb-5">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-end">
+            <a href="#" class="h2 h2--bb mb-2 mr-2">Новинки</a>
+            <div class="mb-2">
+                <a href="#" class="btn btn-gray">Подписаться на новинки</a>
+            </div>
+        </div>
+    </div>
+    {% include "inc/pages/main/new-product.twig" %}
+</section>
+
+<section class="mb-5">
     {% include "inc/pages/main/blog.twig" %}
+</section>
+
+<section class="mb-4">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-end">
+            <a href="#" class="h2 h2--bb mb-2 mr-2">Новости</a>
+            <div class="mb-2">
+                <a href="#" class="btn btn-gray">Подписаться на новости</a>
+            </div>
+        </div>
+    </div>
+    {% include "inc/pages/main/news.twig" %}
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex mb-1">
+            <a href="#" class="h2 h2--bb">О компании</a>
+        </div>
+
+        {% include "inc/pages/main/about.twig" %}
+    </div>
+</section>
 {% endblock %}

@@ -1,0 +1,10 @@
+.txt {
+
+  &-red {
+    color: $red !important;
+  }
+
+  &-crossline {
+    text-decoration: line-through;
+  }
+}
