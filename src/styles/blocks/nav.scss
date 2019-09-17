@@ -1,0 +1,153 @@
+.nav {
+  background-color: #eee;
+
+  &-list {
+    display: flex;
+    padding: 15px 0;
+
+    > li {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &__sub {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      background-color: $white;
+      padding: 10px 20px;
+      box-shadow: 0px 7px 26.7px 2.3px rgba(0, 0, 0, 0.22);
+
+      &--lng {
+        box-shadow: 0px 6px 7px 2.3px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+    transition: .15s ease-in;
+
+    &.is-active,
+    &:hover {
+      color: $blue;
+    }
+
+    &--ico {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: -20px;
+        top: 2px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: $black;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+
+    &-list {
+
+      &__sub {
+        position: relative;
+        box-shadow: none;
+
+        &--lng {
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+.nav-mbl {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  width: 400px;
+  max-width: 100%;
+  padding: 30px 0;
+  background-color: #eee;
+  box-shadow: 0px 7px 26.7px 2.3px rgba(0, 0, 0, 0.22);
+
+  &-top {
+    padding: 0 0 20px 90px;
+  }
+
+  &-bottom {
+    padding-left: 90px;
+  }
+
+  &-list {
+    > li:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &-nav-list {
+    margin-bottom: 30px;
+    background-color: $white;
+
+    > li {
+      padding: 15px 0 15px 90px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__link-nav {
+    font-size: 18px;
+    color: $black;
+    text-decoration: none;
+
+    &:hover,
+    &.is-active {
+      color: $blue;
+    }
+
+    &--ico {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        right: -20px;
+        top: 5px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: $black;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
+}
+
