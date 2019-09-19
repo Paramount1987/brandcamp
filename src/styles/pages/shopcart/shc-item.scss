@@ -1,0 +1,156 @@
+.shc-item {
+  border: 1px solid #e5e5e5;
+  padding: 30px 30px 30px 20px;
+
+  &-row {
+    display: flex;
+
+    &--scnd {
+      padding-left: 174px;
+    }
+
+    &.sp-btw {
+      justify-content: space-between;
+    }
+
+    &__left {
+      display: flex;
+      flex-shrink: 0;
+      margin-right: 30px;
+    }
+
+    &__right {
+      flex-grow: 1;
+    }
+  }
+
+  &-col {
+    &--frst {
+      width: 50%;
+    }
+    &--scnd {
+      width: 22%;
+      margin-left: 5%;
+    }
+  }
+
+  &__chbx {
+    margin-right: 50px;
+    padding-top: 25px;
+  }
+
+  &__pic {
+    max-width: 100%;
+  }
+
+  &__sup-descr {
+    display: inline-block;
+    margin-bottom: 7px;
+    background-color: $yellow;
+    padding: 0 5px;
+    font-size: 13px;
+  }
+
+  &__descr {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: $black;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &__p {
+    color: #727272;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+
+    &--sm {
+      font-size: 15px;
+    }
+  }
+
+  &__control-input {
+    position: relative;
+    width: 100px;
+    border: 2px solid #dcdcdc;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  &__btn {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    outline: none !important;
+    border: none;
+
+    &.is-disabled {
+      pointer-events: none;
+      opacity: .2;
+    }
+
+    &--r {
+      left: auto;
+      right: 5px;
+    }
+  }
+
+  .card-pdct-tags__item {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 20px 15px;
+
+    &-row {
+      &.sp-btw {
+        flex-wrap: wrap;
+      }
+
+      &--scnd {
+        justify-content: flex-end;
+        margin-top: -25px;
+        padding-left: 0;
+      }
+    }
+
+    &-col {
+      &--frst {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &--scnd {
+        width: 100%;
+        order: -1;
+        margin-left: 0;
+      }
+      &--thrd {
+        width: 100%;
+        order: 10;
+      }
+    }
+
+    &__chbx {
+      margin-right: 25px;
+    }
+  }
+}

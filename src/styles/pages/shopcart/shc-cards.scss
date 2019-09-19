@@ -1,0 +1,71 @@
+.shc-card {
+  background-color: #eee;
+  margin-bottom: 3px;
+  padding: 20px 30px;
+  font-size: 13px;
+
+  &__p {
+    margin-bottom: 20px;
+
+    &--sm {
+      font-size: 14px;
+    }
+    &--md {
+      font-size: 18px;
+    }
+    &--lg {
+      font-size: 20px;
+    }
+    &--xlg {
+      font-size: 30px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    border: 1px solid #c9c9c9;
+    font-size: 16px;
+    text-align: center;
+    color: #a2a2a2;
+    text-decoration: none;
+    font-weight: 500;
+
+    &--blue {
+      background-color: $blue;
+      color:$white;
+    }
+
+    &--yellow {
+      border: 3px solid $yellow;
+      background-color: $white;
+      color: $black;
+    }
+
+    &.is-disabled {
+      pointer-events: none;
+      background-color: transparent;
+      color: #a2a2a2;
+      border: 1px solid #c9c9c9;
+    }
+  }
+
+  &__line {
+    margin: 0 -30px 20px -30px;
+    background-color: #cfcfcf;
+    height: 1px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 25px 15px;
+
+    &__btn {
+      font-size: 18px;
+    }
+
+    &__line {
+      margin: 0 -15px 20px -15px;
+    }
+  }
+}

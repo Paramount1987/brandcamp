@@ -1,0 +1,10 @@
+.link {
+  &-bb {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}

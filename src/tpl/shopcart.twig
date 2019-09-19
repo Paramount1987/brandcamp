@@ -1,0 +1,47 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="mb-7">
+    <div class="container">
+        <h1 class="h1 mb-2">
+            Корзина
+            <sup class="h-sup">3 товара</sup>
+        </h1>
+
+        <div class="d-flex mb-3 pl-sm-2">
+            <div class="custom-checkbox mr-3">
+                <input type="checkbox" class="custom-control-checkbox" id="custom11">
+                <label class="custom-control-label pl-2" for="custom11">Выбрать все</label>
+            </div>
+            <p class="txt-fs-14">
+                <a href="#" class="txt-black link-bb">Удалить выбранные</a>
+            </p>
+        </div>
+
+        <div class="shc-row">
+            <div class="shc-row__left">
+                {% include "inc/pages/shopcart/shop-list.twig" %}
+            </div>
+            <div class="shc-row__right">
+                {% include "inc/pages/shopcart/shop-cards.twig" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex">
+            <a href="#" class="h3 h3--bb">Рекомендуем</a>
+        </div>
+    </div>
+    {% include "inc/pages/main/hits.twig" %}
+</section>
+
+{% endblock %}

@@ -4,7 +4,25 @@
     color: $red !important;
   }
 
+  &-black {
+    color: $black !important;
+  }
+
   &-crossline {
     text-decoration: line-through;
+  }
+
+  &-medium {
+    font-weight: 500;
+  }
+  &-semi-bold {
+    font-weight: 550;
+  }
+  &-bold {
+    font-weight: 600;
+  }
+
+  &-fs-14 {
+    font-size: 14px;
   }
 }

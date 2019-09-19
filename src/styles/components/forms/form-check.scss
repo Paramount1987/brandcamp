@@ -1,0 +1,49 @@
+.custom-checkbox {
+  position: relative;
+  padding-left: 24px;
+  min-height: 24px;
+  cursor: pointer;
+}
+
+.custom-control-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:checked ~ .custom-control-label:after {
+    opacity: 1;
+  }
+}
+
+.custom-control-label {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -24px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #adadad;
+    cursor: pointer;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    left: -18px;
+    width: 12px;
+    height: 12px;
+    background-color: $blue;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

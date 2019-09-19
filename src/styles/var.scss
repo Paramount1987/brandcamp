@@ -10,6 +10,7 @@ $spacers: map-merge((
         3: ($spacer * 3),
         4: ($spacer * 4),
         5: ($spacer * 5),
+        7: ($spacer * 7),
         6: ($spacer * 6)
 ), $spacers);
 
@@ -30,7 +31,8 @@ $pink:    #e83e8c !default;
 $red:     #fa0137 !default;
 $orange:  #ff7a32 !default;
 
-$yellow:  #ffc107 !default;
+$yellow:  #ffdd2d !default;
+
 $green:   #27cb99 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
