@@ -52,11 +52,17 @@
   }
 
   &__descr {
+    display: block;
     margin-bottom: 10px;
     font-size: 15px;
     color: $black;
     font-weight: 500;
     line-height: 1.6;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__p {
