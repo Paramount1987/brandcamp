@@ -1,0 +1,32 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="mb-sm-7">
+    {% include "inc/pages/product/product-info.twig" %}
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex">
+            <h3 class="h3">Сопутствующие товары</h3>
+        </div>
+    </div>
+    {% include "inc/pages/product/list.twig" %}
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex">
+            <h3 class="h3">С этмим товаром покупают</h3>
+        </div>
+    </div>
+    {% include "inc/pages/product/list2.twig" %}
+</section>
+
+{% endblock %}

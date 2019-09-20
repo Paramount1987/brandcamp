@@ -1,0 +1,142 @@
+.pdct {
+
+  &-card {
+    padding: 30px 15px;
+    background-color: #eee;
+  }
+
+  &-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 28%;
+
+    &-col {
+      width: 47%;
+    }
+  }
+
+  &__h1 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+
+    &--xs {
+      font-size: 12px;
+    }
+    &--sm {
+      font-size: 13px;
+    }
+    &--md {
+      font-size: 15px;
+    }
+  }
+
+  &-price-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    width: 100%;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+
+    &--new {
+      font-size: 42px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    color: $white;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: .15s ease-in;
+
+    &--white {
+      background-color: $white;
+      border: 1px solid #cfcfcf;
+      color: $black;
+    }
+
+    &:hover {
+      background-color: #404040;
+      color: $white;
+    }
+  }
+
+  &__link {
+    color: $blue;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  &-list-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(75, 75, 75, 0.34);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .15s ease-in;
+
+    &:hover,
+    &.is-active {
+      background-color: $blue;
+      border-color: $blue;
+      color: $white;
+    }
+  }
+
+  &-list-size {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    > li {
+      margin: 0 0 15px 15px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+
+    &-bottom {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    &-bottom {
+
+      &-col {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
