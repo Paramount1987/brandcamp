@@ -1,0 +1,27 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="mb-7">
+    <div class="container">
+        <h1 class="h1 mb-2">
+            Оформление заказа
+        </h1>
+
+        <div class="shc-row">
+            <div class="shc-row__left">
+                {% include "inc/pages/order/order-step.twig" %}
+            </div>
+            <div class="shc-row__right">
+                {% include "inc/pages/order/shop-cards.twig" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

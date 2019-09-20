@@ -1,0 +1,193 @@
+.ordr-list {
+
+  > li {
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.ordr-step-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__input {
+    width: 375px;
+    height: 43px;
+    margin-right: 10px;
+    padding: 0 15px;
+    background-color: #eee;
+    border: none;
+    font-size: 15px;
+    color: #696969;
+  }
+
+  &__btn {
+    min-width: 165px;
+    height: 43px;
+    background: none;
+    border: 1px solid #adadad;
+    color: $black;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $blue;
+    }
+
+    &.is-disabled {
+      pointer-events: none;
+      border: 1px solid #c9c9c9;
+      color: #aaa;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    &__input {
+      width: 100%;
+      margin: 0 0 6px 0;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+.ordr-step {
+  display: flex;
+  padding: 20px 25px 35px 25px;
+
+  &-l {
+    margin-right: 35px;
+  }
+
+  &-r {
+    flex-grow: 1;
+  }
+
+  &-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15px -25px;
+
+    &__pic {
+      margin-left: 25px;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+
+    &-col {
+      width: 48%;
+    }
+  }
+
+  &__num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #afafaf;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: $white;
+    line-height: 40px;
+
+    &.is-active {
+      background-color: #595959;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: 500;
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+
+    &--light {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    max-width: 100%;
+    min-height: 50px;
+    background-color: $blue;
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    outline: none !important;
+    cursor: pointer;
+
+    &-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    &--outline {
+      background-color: transparent;
+      border: 1px solid #adadad;
+      color: $black;
+      font-weight: 500;
+
+      &:hover {
+        border-color: $blue;
+      }
+    }
+  }
+
+  &__h5 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .h4 {
+    margin-bottom: 25px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 20px 15px;
+
+    &-info {
+
+      &-col {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__btn-group {
+
+      .ordr-step__btn {
+        width: 100%;
+        margin: 0 0 6px 0 !important;
+      }
+    }
+  }
+}
