@@ -16,7 +16,7 @@
       text-decoration: underline;
     }
   }
-  + .breadcrumb-item:not(:last-child) {
+  &:not(:last-child) {
     padding-right: 6px;
 
     &::after {
