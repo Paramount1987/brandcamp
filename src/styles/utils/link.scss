@@ -1,10 +1,20 @@
 .link {
+
   &-bb {
     text-decoration: none;
     border-bottom: 1px solid currentColor;
 
     &:hover {
       border-bottom-color: transparent;
+    }
+  }
+
+  &-custom {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

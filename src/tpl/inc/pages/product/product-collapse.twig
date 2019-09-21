@@ -11,6 +11,7 @@
         <button class="accordion-card__link" type="button" data-toggle="collapse" data-target="#collapse3"
             aria-expanded="false">
             Отзывы
+            <sup class="sup">5</sup>
         </button>
         <button class="accordion-card__link" type="button" data-toggle="collapse" data-target="#collapse4"
             aria-expanded="false">
@@ -129,17 +130,13 @@
             <button class="accordion-card__link" type="button" data-toggle="collapse" data-target="#collapse3"
                 aria-expanded="false">
                 Отзывы
+                <sup class="sup">5</sup>
             </button>
         </div>
 
         <div id="collapse3" class="collapse" data-parent="#accordionParent">
             <div class="accordion-card__body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                {% include "product-reviews.twig" %}
             </div>
         </div>
     </div>
