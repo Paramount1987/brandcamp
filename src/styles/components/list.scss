@@ -4,4 +4,12 @@
     padding: 0;
     list-style: none;
   }
+
+  &-custom {
+    padding-left: 18px;
+
+    > li {
+      margin-bottom: 5px;
+    }
+  }
 }

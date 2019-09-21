@@ -16,6 +16,7 @@ require('./utils/index');
 require('./components/sliders/intro-slider');
 require('./components/sliders/multy-slider');
 require('./components/sliders/pics-slider');
+require('./components/sliders/pdct-sliders');
 
 import Nav from './components/nav';
 
