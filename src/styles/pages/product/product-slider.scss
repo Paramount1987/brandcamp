@@ -30,6 +30,17 @@
     &__pic {
       width: 100%;
     }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      border: 3px solid transparent;
+      cursor: pointer;
+
+      &.is-active {
+        border-color: #000;
+      }
+    }
   }
 
   &__pic {

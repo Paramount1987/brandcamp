@@ -6,7 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>brandcamp</title>
-	<link rel="stylesheet" href="css/style.css?1569072180397">
+	<link rel="stylesheet" href="css/style.css?1569147449187">
 </head>
 <body>
 
@@ -48,7 +48,7 @@
                         <a href="tel:8 800 550 35 69" class="header__link-phn">8 800 550 35 69</a>
                         <div class="relative">
                             <a href="#nav-lng" class="header__link-lng js-nav-lng"><span></span>RU</a>
-                            <ul id="nav-lng" class="nav-list__sub nav-list__sub--lng list-default">
+                            <ul id="nav-lng" class="nav-list__sub nav-list__sub--lng list-default js-header-dropdown">
                                 <li><a href="#" class="header__link-lng">EN</a></li>
                                 <li><a href="#" class="header__link-lng">ES</a></li>
                             </ul>
@@ -61,9 +61,9 @@
                     <button class="header__btn-nav js-btn-nav"><i></i><i></i><i></i></button>
                     <a href="#" class="header-logo">brandcamp</a>
                 </div>
-                <div class="header-col header-col--form">
+                <div class="header-col header-col--form relative">
                     <div class="d-flex">
-                        <a href="#" class="header__btn-ct">
+                        <a href="#" class="header__btn-ct js-header-ct">
                             <span class="header__btn-ct__ico">ico</span>
                             Каталог
                         </a>
@@ -71,6 +71,13 @@
                             <input type="text" class="header-form__input" placeholder="Что вы ищете?">
                             <button type="button" class="header-form__btn">ico</button>
                         </form>
+                    </div>
+                    <div class="header-catalog js-header-catalog">
+                        <a href="#" class="header-catalog__link">Все товары</a>
+                        <a href="#" class="header-catalog__link">Снаряжение</a>
+                        <a href="#" class="header-catalog__link">Обувь</a>
+                        <a href="#" class="header-catalog__link">Одежда</a>
+                        <a href="#" class="header-catalog__link">Ремесленные товары</a>
                     </div>
                 </div>
                 <div class="header-col header-col--hl">
@@ -129,7 +136,6 @@
         </ul>
     </div>
 </nav>
-
     <nav class="nav-mbl js-nav-mbl">
     <div class="nav-mbl-inner">
         <div class="nav-mbl-top">
@@ -191,7 +197,6 @@
         </div>
     </div>
 </nav>
-
 </header>
 
 
@@ -211,26 +216,26 @@
     <div class="container">
     <div class="pdct-row">
         <div class="pdct-col">
-            <div class="pdct-gallery-wrapper">
+            <div class="pdct-gallery-wrapper js-gallery-wrapper">
     <div class="pdct-gallery-wrapper__l">
         <!-- Swiper -->
-        <div class="pdct-gallery-vertical__arrow-prev"></div>
-        <div class="pdct-gallery-vertical__arrow-next"></div>
+        <div class="pdct-gallery-vertical__arrow-prev js-vertical-prev"></div>
+        <div class="pdct-gallery-vertical__arrow-next js-vertical-next"></div>
         <div class="swiper-container pdct-gallery-vertical js-pdct-vertical-gallery">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide is-active" data-rel="0">
                     <img src="https://via.placeholder.com/70x70" alt="" class="pdct-gallery-vertical__pic">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-rel="1">
                     <img src="https://via.placeholder.com/70x70" alt="" class="pdct-gallery-vertical__pic">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-rel="2">
                     <img src="https://via.placeholder.com/70x70" alt="" class="pdct-gallery-vertical__pic">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-rel="3">
                     <img src="https://via.placeholder.com/70x70" alt="" class="pdct-gallery-vertical__pic">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-rel="4">
                     <img src="https://via.placeholder.com/70x70" alt="" class="pdct-gallery-vertical__pic">
                 </div>
             </div>
@@ -1340,6 +1345,6 @@
 </footer>
 
 
-<script src="js/index.js?1569072180399"></script>
+<script src="js/index.js?1569147449189"></script>
 </body>
 </html>
