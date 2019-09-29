@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
-        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-        <title>brandcamp</title>
-        <link href="css/style.css?{{ date().getTime() }}" rel="stylesheet" />
-    </head>
-    <body>
-        {% set pages = [
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>brandcamp</title>
+    <link href="css/style.css?{{ date().getTime() }}" rel="stylesheet" />
+</head>
+
+<body>
+    {% set pages = [
             { link: 'main', name: 'Главная' },
             { link: 'shopcart', name: 'Корзина' },
             { link: 'order', name: 'Оформление заказа' },
             { link: 'product', name: 'Описание товара' }
         ] %}
 
-        <div class="wrapper">
-            <div class="container">
-                <h1>Brandcamp  страницы</h1>
+    {% set pagesLk = [
+            { link: 'lk-promocodes', name: 'Промокоды' }
+        ] %}
 
-                <ul>
-                    {% for page in pages %}
-                        <li>
-                            <a href="{{ page.link }}.html" class="page-link">{{ page.name }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Brandcamp страницы</h1>
+
+            <ul>
+                {% for page in pages %}
+                <li>
+                    <a href="{{ page.link }}.html" class="page-link">{{ page.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <hr class="mb-5">
+
+            <h1>Личный Кабинет</h1>
+
+            <ul>
+                {% for page in pagesLk %}
+                <li>
+                    <a href="{{ page.link }}.html" class="page-link">{{ page.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

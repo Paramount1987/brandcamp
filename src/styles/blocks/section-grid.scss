@@ -1,0 +1,32 @@
+.section {
+  &-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-col {
+
+    &--sm {
+      display: none;
+    }
+
+    &--lg {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+
+    &-col {
+
+      &--sm {
+        display: block;
+        width: 24%;
+      }
+
+      &--lg {
+        width: 72%;
+      }
+    }
+  }
+}
