@@ -1,6 +1,10 @@
 .multy-slider {
   padding: 0 15px;
 
+  &--outside {
+    padding: 0;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
@@ -8,12 +12,20 @@
 
   @include media-breakpoint-up(sm) {
     padding: 0 30px;
+
+    &--outside {
+      padding: 0;
+    }
   }
 
   @include media-breakpoint-up(md) {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0;
+
+    &--outside {
+      margin: 0 -29px;
+    }
 
     > .swiper-container {
       padding: 0 29px;

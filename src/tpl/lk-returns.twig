@@ -1,0 +1,28 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2 mb-5">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="container section-row mb-4">
+    <div class="section-col section-col--sm">
+        {% include "inc/pages/lk/aside-nav.twig" %}
+    </div>
+    <div class="section-col section-col--lg">
+        <div class="mb-4">
+            <img src="https://via.placeholder.com/850x80" alt="" class="w-100p">
+        </div>
+
+        <div class="mb-5">
+            <h1 class="h1">Мои возвраты</h1>
+
+            {% include "inc/pages/lk/products-returns.twig" %}
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -77,6 +77,10 @@ $gray_p: #505050;
     color: $gray_p;
     line-height: 1.5;
 
+    .txt-black & {
+      color: $black;
+    }
+
     &--md {
       font-size: 14px;
     }
