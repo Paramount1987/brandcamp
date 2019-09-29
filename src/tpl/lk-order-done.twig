@@ -1,0 +1,96 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2 mb-5">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="mb-8">
+    <div class="container">
+        <h1 class="h1 mb-1">Благодарим!</h1>
+        <h3 class="h3 mb-3">Ваш заказ оформлен ico</h3>
+
+        <div class="ordr-done">
+            <div class="ordr-done-body">
+                <div class="ordr-done-row">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold">Номер заказа</p>
+                    </div>
+                    <div class="ordr-done-col is-right">
+                        <p class="txt-medium">
+                            <a href="#" class="txt-blue">№ 123123123-123-123</a>
+                        </p>
+                        <p class="txt-gray txt-fs-12">Для отслеживания в Личном кабинете</p>
+                    </div>
+                </div>
+
+                <div class="ordr-done-row">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold">Адрес доставки</p>
+                    </div>
+                    <div class="ordr-done-col is-right">
+                        <p class="">Чебоксары, г. Чебоксары, ул. Ярославская, д. 72</p>
+                        <p class="">
+                            <a href="#" class="txt-blue">Как добраться ico</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ordr-done-row">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold">Получатель</p>
+                    </div>
+                    <div class="ordr-done-col is-right">
+                        <p class="">Яковлева Яна</p>
+                        <p class="">+7 (919) 668-82-08, lisa_krasa_89@mail.ru</p>
+                    </div>
+                </div>
+
+                <div class="ordr-done-row">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold">Вес заказа</p>
+                    </div>
+                    <div class="ordr-done-col is-right">
+                        <p class="">501 гр.</p>
+                    </div>
+                </div>
+
+                <div class="ordr-done-row mb-0">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold">Дата доставки</p>
+                    </div>
+                    <div class="ordr-done-col is-right">
+                        <p class="">26 сентября</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ordr-done-bottom">
+                <div class="ordr-done-row mb-0">
+                    <div class="ordr-done-col is-left">
+                        <p class="txt-bold txt-fs-16">К оплате наличными</p>
+                    </div>
+                    <div class="ordr-done-col is-right no-grow">
+                        <p class="txt-bold txt-fs-30">49 000 ₽</p>
+                        <p class="txt-fs-14">
+                            С учетом 99 ₽ за доставку
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="container mb-2">
+        <div class="d-flex">
+            <h3 class="h3">Специальное предложение сегодняшнего дня</h3>
+        </div>
+    </div>
+    {% include "inc/pages/product/list.twig" %}
+</section>
+
+{% endblock %}

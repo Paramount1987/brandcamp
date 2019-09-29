@@ -1,0 +1,44 @@
+.ordr-done {
+  max-width: 650px;
+  background-color: #eee;
+
+  &-body {
+    padding: 35px;
+    border-bottom: 1px solid $white;
+  }
+
+  &-bottom {
+    padding: 35px;
+  }
+
+  &-row {
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-col {
+
+      &.is-left {
+        flex-shrink: 0;
+        width: 165px;
+        padding-right: 20px;
+      }
+      &.is-right {
+        flex-grow: 1;
+      }
+      &.no-grow {
+        flex-grow: 0;
+      }
+    }
+  }
+}
