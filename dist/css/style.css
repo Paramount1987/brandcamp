@@ -3398,6 +3398,37 @@ strong {
     font-size: 16px;
     font-weight: 550; }
 
+.blog-article-body p {
+  margin-bottom: 20px; }
+
+.blog-article__date {
+  margin-bottom: 8px;
+  font-size: 14px; }
+
+.blog-article__title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 550; }
+
+.blog-article__link-video {
+  position: relative;
+  display: block;
+  margin-bottom: 30px; }
+  .blog-article__link-video img {
+    width: 100%; }
+
+.blog-article__ico-video {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: -35px 0 -35px 0;
+  text-align: center; }
+
 .blg-grid-col {
   display: -webkit-box;
   display: -ms-flexbox;

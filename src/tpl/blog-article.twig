@@ -1,0 +1,49 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+    <section class="mt-2 mb-5">
+        <div class="container">
+            {% include "inc/breadcrumb.twig" %}
+        </div>
+    </section>
+
+    <section class="container section-row mb-4 mb-md-8">
+        <div class="section-col section-col--sm">
+            {% include "inc/pages/lk/aside-nav-2.twig" %}
+        </div>
+        <div class="section-col section-col--lg">
+            <div class="mb-5">
+                <div class="mb-2">
+                    <a href="#" class="link-custom">i К списку блог</a>
+                </div>
+
+                <div class="blog-article">
+                    <p class="blog-article__date">07.07.2019</p>
+                    <p class="blog-article__title">Особенности Автомобильной лопаты BRANDCAMP</p>
+
+                    <div class="blog-article-body">
+                        <a href="#" class="blog-article__link-video">
+                            <span class="blog-article__ico-video">ico</span>
+                            <img src="https://via.placeholder.com/850x390" alt="">
+                        </a>
+
+                        <p>
+                            Автомобильная лопата — один из важных инструментов для любого водителя. Тем более, если говорить о
+                            российских автомобилистах и дорогах. Ухабы, ямы, снежные заторы и глубокие лужи — со всем этим
+                            водителям приходится сталкиваться, к сожалению, достаточно часто. И если ваше авто застряло в снегу или
+                            завязло глубоко в грязи — спасти машину сможет только лопата.
+                        </p>
+
+                        <p>
+                            Но возить с собой привычную всем лопату (или даже, скажем лопату сапера) — не совсем удобно.
+                            Во-первых, они занимают достаточно много места. Во-вторых, просто тяжелые. И постоянно их носить
+                            с собой не получится. В этом случае вас могут выручить современные малогабаритные лопаты.
+                            Из отечественных — это лопата марки «Зубр». Она достаточно компактна и удобна.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
