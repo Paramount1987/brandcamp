@@ -17,6 +17,7 @@ require('./components/sliders/intro-slider');
 require('./components/sliders/multy-slider');
 require('./components/sliders/pics-slider');
 require('./components/sliders/pdct-sliders');
+require('./components/reviews/review-insta');
 
 import Nav from './components/nav';
 

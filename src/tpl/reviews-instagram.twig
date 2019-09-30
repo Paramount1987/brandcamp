@@ -1,25 +1,32 @@
 {% extends './inc/page.twig' %}
 {% set items = [
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 1'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 2'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 3'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 4'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 5'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 6'
     },
     {
-        bg: 'https://via.placeholder.com/265x370'
+        bg: 'https://via.placeholder.com/265x370',
+        author: 'author 7'
     }
 ] %}
 
@@ -41,15 +48,13 @@
                 <h1 class="h1">Отзывы Instagram</h1>
             </div>
 
-            <ul class="review-insta-list">
+            <div class="review-insta-list popup-gallery">
                 {% for item in items %}
-                    <li>
-                        <a href="#" class="review-insta">
-                            <span class="review-insta__bg" style="background-image: url('{{ item.bg }}')"></span>
-                        </a>
-                    </li>
+                    <a href="{{ item.bg }}" class="review-insta js-review-insta" title="{{ item.author }}">
+                        <span class="review-insta__bg" style="background-image: url('{{ item.bg }}')"></span>
+                    </a>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
 
         {% include "inc/pagination.twig" %}

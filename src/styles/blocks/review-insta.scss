@@ -1,18 +1,13 @@
 .review-insta {
   display: block;
+  width: 100%;
+  max-width: 265px;
+  margin: 0 0 50px 30px;
 
   &-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 -30px;
-    padding: 0;
-    list-style: none;
-
-    > li {
-      width: 100%;
-      max-width: 265px;
-      margin: 0 0 50px 30px;
-    }
   }
 
   &__bg {
@@ -24,26 +19,56 @@
   }
 
   @include media-breakpoint-up(sm) {
+    width: 46%;
+    margin: 0 0 70px 4%;
 
     &-list {
       margin-left: -4%;
-
-      > li {
-        width: 46%;
-        margin: 0 0 70px 4%;
-      }
     }
   }
 
   @include media-breakpoint-up(md) {
+    width: 30.33333%;
+    margin-left: 3%;
 
     &-list {
       margin-left: -3%;
-
-      > li {
-        width: 30.33333%;
-        margin-left: 3%;
-      }
     }
+  }
+}
+
+.mfp-img-insta {
+
+  .mfp-figure:after {
+    display: none;
+  }
+
+  .mfp-content {
+    width: 710px;
+    background-color: $white;
+  }
+
+  .mfp-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: $black;
+  }
+
+  .mfp-bottom-bar {
+    top: 20px;
+    left: 30px;
+    right: 0;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .mfp-counter {
+    display: none;
+  }
+
+  .mfp-image-holder .mfp-close {
+    right: 0;
+    width: auto;
+    color: $black;
   }
 }
