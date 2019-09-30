@@ -1,0 +1,60 @@
+{% extends './inc/page.twig' %}
+{% set items = [
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x370'
+    }
+] %}
+
+{% block content %}
+<section class="mt-2 mb-5">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="container section-row mb-4 mb-md-8">
+    <div class="section-col section-col--sm">
+        {% include "inc/pages/lk/aside-nav-2.twig" %}
+    </div>
+    <div class="section-col section-col--lg">
+        <div class="mb-5">
+            <div class="d-flex flex-wrap mb-3">
+                <a href="#" class="h1 txt-gray mr-7">Отзывы Video</a>
+                <h1 class="h1">Отзывы Instagram</h1>
+            </div>
+
+            <ul class="review-insta-list">
+                {% for item in items %}
+                    <li>
+                        <a href="#" class="review-insta">
+                            <span class="review-insta__bg" style="background-image: url('{{ item.bg }}')"></span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% include "inc/pagination.twig" %}
+
+    </div>
+</section>
+
+{% endblock %}

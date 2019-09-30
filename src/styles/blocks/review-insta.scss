@@ -1,0 +1,49 @@
+.review-insta {
+  display: block;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      width: 100%;
+      max-width: 265px;
+      margin: 0 0 50px 30px;
+    }
+  }
+
+  &__bg {
+    display: block;
+    position: relative;
+    padding-bottom: 140%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include media-breakpoint-up(sm) {
+
+    &-list {
+      margin-left: -4%;
+
+      > li {
+        width: 46%;
+        margin: 0 0 70px 4%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    &-list {
+      margin-left: -3%;
+
+      > li {
+        width: 30.33333%;
+        margin-left: 3%;
+      }
+    }
+  }
+}
