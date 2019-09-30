@@ -1,0 +1,85 @@
+{% extends './inc/page.twig' %}
+{% set items = [
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    },
+    {
+        bg: 'https://via.placeholder.com/265x185',
+        date: '07.07.2019',
+        title: 'Особенности',
+        txt: 'Автомобильной лопаты BRANDCAMP'
+    }
+] %}
+
+{% block content %}
+<section class="mt-2 mb-5">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="container section-row mb-4 mb-md-8">
+    <div class="section-col section-col--sm">
+        {% include "inc/pages/lk/aside-nav-2.twig" %}
+    </div>
+    <div class="section-col section-col--lg">
+        <div class="mb-5">
+            <h1 class="h1">Блог</h1>
+
+
+            <ul class="blog-list">
+                {% for item in items %}
+                    <li>
+                        <a href="#" class="blog-link">
+                            <span class="blog-link__bg" style="background-image: url('{{ item.bg }}')">
+                                <span class="blog-link-inner">
+                                    <span class="blog-link__date">{{ item.date }}</span>
+                                    <span class="blog-link__title">{{ item.title }}</span>
+                                    <span class="blog-link__txt">{{ item.txt }}</span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% include "inc/pagination.twig" %}
+
+    </div>
+</section>
+
+{% endblock %}
