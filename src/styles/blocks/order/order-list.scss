@@ -53,9 +53,49 @@
     font-weight: 550;
   }
 
+  &__ico {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
   &-imgs {
     padding: 20px 0;
     border-top: 1px solid #e5e5e5;
+  }
+
+  &-price {
+    background-color: #eee;
+    padding: 25px 15px;
+
+    &__col {
+
+      &.is-l {
+        width: 60%;
+      }
+      &.is-r {
+        width: 40%;
+        text-align: right
+      }
+    }
+
+    &__ico {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.order-item--inner {
+  position: relative;
+  border: none;
+
+  .order-item-top {
+    padding: 0;
+    background-color: transparent;
   }
 }
 
@@ -96,5 +136,18 @@
     &-footer {
       padding: 20px 35px;
     }
+
+    &-price {
+      position: absolute;
+      z-index: 2;
+      top: 90px;
+      right: 0;
+      width: 360px;
+      padding-right: 40px;
+    }
+  }
+
+  .order-item--inner {
+    padding-right: 400px;
   }
 }
