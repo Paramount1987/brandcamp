@@ -1,0 +1,90 @@
+{% set items = [
+    {
+        pics: ['https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260'],
+        tags: [{txt: 'хит продаж', className: 'bg-orange'}],
+        prices: [{txt: '3 800 ₽', className: ''}],
+        title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
+        descr: 'Комплектация: Special series',
+        txtOrder: '1837 заказов'
+    },
+    {
+        pics: ['https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260'],
+        tags: [ {txt: 'хит продаж', className: 'bg-orange'}],
+        prices: [{txt: '3 800 ₽', className: ''}],
+        title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
+        descr: '',
+        txtOrder: '1837 заказов'
+    },
+    {
+        pics: ['https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260'],
+        tags: [ {txt: 'хит продаж', className: 'bg-orange'}],
+        prices: [{txt: '3 800 ₽', className: ''}],
+        title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
+        descr: 'Комплектация: Special series',
+        txtOrder: '1837 заказов'
+    },
+    {
+        pics: ['https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260'],
+        tags: [ {txt: 'хит продаж', className: 'bg-orange'}],
+        prices: [ {txt: '3 800 ₽', className: ''}],
+        title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
+        descr: 'Комплектация: Special series',
+        txtOrder: '1837 заказов'
+    },
+    {
+        pics: ['https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260', 'https://via.placeholder.com/260x260'],
+        tags: [ {txt: 'хит продаж', className: 'bg-orange'}],
+        prices: [{txt: '3 800 ₽', className: ''}],
+        title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
+        descr: 'Комплектация: Special series',
+        txtOrder: '1837 заказов'
+    }
+] %}
+
+<!-- Swiper -->
+<div class="multy-slider multy-slider--outside">
+    <div class="swiper-container js-multy-slider" data-perviewlg="3" data-perviewmd="2">
+        <div class="swiper-wrapper">
+            {% for item in items %}
+            <div class="swiper-slide">
+                <div class="card-pdct">
+                    <div class="card-pdct-top">
+                        <div class="swiper-container pics-slider js-pics-slider">
+                            <div class="swiper-wrapper">
+                                {% for pic in item.pics %}
+                                <div class="swiper-slide">
+                                    <img src="https://via.placeholder.com/260x260" alt="" class="card-pdct__pic">
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="card-pdct-body">
+                        <div class="card-pdct-tags">
+                            {% for tag in item.tags %}
+                            <span class="card-pdct-tags__item {{ tag.className }}">{{ tag.txt }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="card-pdct-prices">
+                            {% for price in item.prices %}
+                            <span class="card-pdct-prices__item {{ price.className }}">{{ price.txt }}</span>
+                            {% endfor %}
+                        </div>
+                        <a href="#" class="card-pdct__title">{{ item.title }}</a>
+                        <p class="card-pdct__p">{{ item.descr }}</p>
+                    </div>
+                    <div class="card-pdct-footer">
+                        <p class="card-pdct__p mr-2">{{ item.txtOrder }}</p>
+                        <div>i i i i i</div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{% set pics = [
+    'https://via.placeholder.com/260x260',
+    'https://via.placeholder.com/260x260'
+] %}
+
+<div class="swiper-container pics-slider js-pics-slider">
+    <div class="swiper-wrapper">
+        {% for pic in pics %}
+            <div class="swiper-slide">
+                <img src="{{ pic }}" alt="" class="card-pdct__pic">
+            </div>
+        {% endfor %}
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
