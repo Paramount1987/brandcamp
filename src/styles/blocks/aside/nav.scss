@@ -16,7 +16,10 @@
 
     &.is-active {
       font-weight: 600;
-      pointer-events: none;
+
+      &:not(.is-toggle) {
+        pointer-events: none;
+      }
     }
   }
 
