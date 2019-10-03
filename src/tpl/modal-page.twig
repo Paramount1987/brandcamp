@@ -1,0 +1,97 @@
+{% extends './inc/page.twig' %}
+
+{% block content %}
+<section class="mt-2 mb-5">
+    <div class="container">
+        {% include "inc/breadcrumb.twig" %}
+    </div>
+</section>
+
+<section class="container section-row mb-4">
+    <ul>
+        <li>
+            <a href="#popup-form-reg" class="js-popup-form">Вход или регистрация</a>
+        </li>
+        <li>
+            <a href="#popup-form-sms" class="js-popup-form">Ввод смс</a>
+        </li>
+    </ul>
+</section>
+
+<section>
+<!-- forms-->
+<form id="popup-form-reg" class="popup-form form mfp-hide">
+    <p class="popup-form__title">Приветствуем вас!</p>
+    <div class="popup-form-inner">
+        <div class="form-group mb-3">
+            <label for="" class="form__label d-block">Город доставки ваших покупок</label>
+            <select name="" id="" class="js-select-form">
+                <option value="1">Москва</option>
+                <option value="2">Казань</option>
+                <option value="2">Сочи</option>
+            </select>
+        </div>
+        <h3 class="h3 txt-center mb-3">Вход или регистрация</h3>
+
+        <div class="form-group form-group--center-sh">
+            <label for="" class="form__label d-block">Телефон</label>
+            <div class="relative">
+                <input type="text" placeholder="" class="ordr-step-form__input pl-3">
+                <span class="form__input-prefix">+7</span>
+            </div>
+        </div>
+
+        <div class="form-group form-group--center-sh mb-3">
+            <button class="pdct__btn" type="submit">Получить код</button>
+        </div>
+
+        <div class="txt-center mb-3">
+            <p class="mb-1"><a href="#" class="link-custom">Войти по почте</a></p>
+            <p><a href="#" class="link-custom">Создать аккаунт как юрлицо</a></p>
+        </div>
+
+        <p class="txt-center txt-gray txt-fs-12">
+            При входе или регистрации вы соглашаетесь с <a href="#">Условиями</a>
+        </p>
+    </div>
+</form>
+<form id="popup-form-sms" class="popup-form form mfp-hide">
+    <p class="popup-form__title">Приветствуем вас!</p>
+    <div class="popup-form-inner">
+        <div class="form-group mb-3">
+            <label for="" class="form__label d-block">Город доставки ваших покупок</label>
+            <select name="" id="" class="js-select-form">
+                <option value="1">Москва</option>
+                <option value="2">Казань</option>
+                <option value="2">Сочи</option>
+            </select>
+        </div>
+        <h3 class="h3 txt-center mb-3 relative">
+            Введите код
+
+            <span class="form__arrow-back">ico</span>
+        </h3>
+
+        <div class="form-group form-group--center-sh">
+            <p class="form__label mb-1 txt-center">Код отправлен на +7 123 456 78 90</p>
+            <div class="d-flex justify-content-center  mb-2">
+                <input type="text" maxlength="1" class="form__input-code">
+                <input type="text" maxlength="1" class="form__input-code">
+                <input type="text" maxlength="1" class="form__input-code">
+                <input type="text" maxlength="1" class="form__input-code">
+            </div>
+            <p class="form__label txt-center">Получить новы код можно через 00:59</p>
+        </div>
+
+        <div class="form-group form-group--center-sh mb-3">
+            <button class="pdct__btn" type="submit">Зарегистрироваться</button>
+        </div>
+
+        <div class="txt-center">
+            <p class="mb-1"><a href="#" class="link-custom">Войти по почте</a></p>
+        </div>
+    </div>
+</form>
+</section>
+
+{% endblock %}

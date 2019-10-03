@@ -18,6 +18,8 @@ require('./components/sliders/multy-slider');
 require('./components/sliders/pics-slider');
 require('./components/sliders/pdct-sliders');
 require('./components/reviews/review-insta');
+require('./components/modals');
+require('./components/form');
 
 import Nav from './components/nav';
 

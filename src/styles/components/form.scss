@@ -1,8 +1,44 @@
 @import "forms/form-check";
+@import "forms/form-select";
 
 //
 // Textual form controls
 //
+.form {
+
+  &__label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__input-prefix {
+    position: absolute;
+    z-index: 5;
+    top: 11px;
+    left: 10px;
+    color: #696969;
+  }
+
+  &__input-code {
+    width: 43px;
+    height: 52px;
+    margin: 0 8px;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: center;
+  }
+
+  &__arrow-back {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    outline: 1px solid $black;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
 
 .form-control {
   display: block;
@@ -48,6 +84,12 @@
 
 .form-group {
   margin-bottom: 10px;
+
+  &--center-sh {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 

@@ -1,0 +1,13 @@
+.popup-form {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}

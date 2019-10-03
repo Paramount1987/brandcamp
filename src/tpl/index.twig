@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        name="viewport" />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <title>brandcamp</title>
-    <link href="css/style.css?{{ date().getTime() }}" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+        <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+        <title>brandcamp</title>
+        <link href="css/style.css?{{ date().getTime() }}" rel="stylesheet"/>
+    </head>
 
-<body>
-    {% set pages = [
+    <body>
+        {% set pages = [
             { link: 'main', name: 'Главная' },
             { link: 'shopcart', name: 'Корзина' },
             { link: 'order', name: 'Оформление заказа' },
@@ -24,7 +23,7 @@
             { link: 'catalog-2', name: 'Каталог (вид 2)' }
         ] %}
 
-    {% set pagesLk = [
+        {% set pagesLk = [
             { link: 'lk-promocodes', name: 'Промокоды' },
             { link: 'lk-order-done', name: 'Заказ оформлен' },
             { link: 'lk-returns', name: 'Возвраты' },
@@ -33,30 +32,38 @@
             { link: 'lk-order-list-inner', name: 'Список заказов (внутреняя)' }
         ] %}
 
-    <div class="wrapper">
-        <div class="container">
-            <h1>Brandcamp страницы</h1>
+        <div class="wrapper">
+            <div class="container">
+                <h1>Brandcamp страницы</h1>
 
-            <ul>
-                {% for page in pages %}
-                <li>
-                    <a href="{{ page.link }}.html">{{ page.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            <hr class="mb-5">
+                <ul>
+                    {% for page in pages %}
+                        <li>
+                            <a href="{{ page.link }}.html">{{ page.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <hr class="mb-5">
 
-            <h1>Личный Кабинет</h1>
+                <h1>Личный Кабинет</h1>
 
-            <ul>
-                {% for page in pagesLk %}
-                <li>
-                    <a href="{{ page.link }}.html">{{ page.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
+                <ul>
+                    {% for page in pagesLk %}
+                        <li>
+                            <a href="{{ page.link }}.html">{{ page.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <h1>Модальные окна</h1>
+
+                <ul>
+                    <li>
+                        <a href="modal-page.html">Страница модальных окон</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>
