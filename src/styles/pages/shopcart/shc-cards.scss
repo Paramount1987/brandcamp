@@ -34,16 +34,26 @@
     color: #a2a2a2;
     text-decoration: none;
     font-weight: 500;
+    transition: .15s ease-in;
 
     &--blue {
       background-color: $blue;
+      border-color: $blue;
       color:$white;
+
+      &:hover {
+        background-color: darken($blue, 15%);
+      }
     }
 
     &--yellow {
       border: 3px solid $yellow;
       background-color: $white;
       color: $black;
+
+      &:hover {
+        background-color: $yellow;
+      }
     }
 
     &.is-disabled {
