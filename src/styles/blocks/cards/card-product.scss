@@ -85,4 +85,18 @@ $gray_p: #505050;
       font-size: 14px;
     }
   }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    margin: 0 1px;
+    color: $yellow;
+    cursor: pointer;
+
+    &.is-gray {
+      color: #c8c8c8;
+    }
+  }
 }

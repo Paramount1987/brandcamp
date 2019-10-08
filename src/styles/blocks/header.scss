@@ -71,7 +71,7 @@
     align-items: center;
     height: 43px;
     margin-right: 12px;
-    padding: 0 12px;
+    padding: 0 12px 0 2px;
     background-color: $blue;
     color: $white;
     text-decoration: none;
@@ -84,7 +84,11 @@
     }
 
     &__ico {
-      margin-right: 12px;
+      svg {
+        display: block;
+        width: 43px;
+        height: 35px;
+      }
     }
   }
 
@@ -97,6 +101,15 @@
 
     &:hover {
       text-decoration: underline;
+    }
+
+    &__ico {
+      margin-right: 4px;
+      svg {
+        display: block;
+        width: 10px;
+        height: 14px;
+      }
     }
   }
 
@@ -136,8 +149,16 @@
   &__btn {
     border: none;
     background: $blue;
+    padding: 0;
     color: $white;
     cursor: pointer;
+
+    svg {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin-left: 3px;
+    }
   }
 }
 

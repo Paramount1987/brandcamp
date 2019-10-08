@@ -4,7 +4,9 @@
             <div class="header-row header-row--frst">
                 <div class="header-col">
                     <a href="#" class="header__link-lct">
-                        <span></span> Чебоксары
+                        <span class="header__link-lct__ico">
+                            {% include "./svg/i-map2.svg" %}
+                        </span> Чебоксары
                     </a>
                 </div>
                 <div class="header-col">
@@ -50,12 +52,16 @@
                 <div class="header-col header-col--form relative">
                     <div class="d-flex">
                         <a href="#" class="header__btn-ct js-header-ct">
-                            <span class="header__btn-ct__ico">ico</span>
+                            <span class="header__btn-ct__ico">
+                                {% include "./svg/i-catalog.svg" %}
+                            </span>
                             Каталог
                         </a>
                         <form class="header-form">
                             <input type="text" class="header-form__input" placeholder="Что вы ищете?">
-                            <button type="button" class="header-form__btn">ico</button>
+                            <button type="button" class="header-form__btn">
+                                {% include "./svg/i-search.svg" %}
+                            </button>
                         </form>
                     </div>
                     <div class="header-catalog js-header-catalog">
@@ -70,25 +76,33 @@
                     <ul class="header__list">
                         <li>
                             <a href="#" class="header-link">
-                                <span class="header-link__icon">i</span>
+                                <span class="header-link__icon">
+                                    {% include "./svg/i-profile.svg" %}
+                                </span>
                                 <span class="header-link__txt">Войти</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="header-link">
-                                <span class="header-link__icon">i</span>
+                                <span class="header-link__icon">
+                                    {% include "./svg/i-box.svg" %}
+                                </span>
                                 <span class="header-link__txt">Заказы</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="header-link">
-                                <span class="header-link__icon">i</span>
+                                <span class="header-link__icon">
+                                    {% include "./svg/i-heart.svg" %}
+                                </span>
                                 <span class="header-link__txt">Отложенные</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="header-link">
-                                <span class="header-link__icon">i</span>
+                                <span class="header-link__icon">
+                                    {% include "./svg/i-court.svg" %}
+                                </span>
                                 <span class="header-link__txt">Корзина</span>
                             </a>
                         </li>
