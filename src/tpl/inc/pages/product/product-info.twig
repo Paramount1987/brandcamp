@@ -3,8 +3,12 @@
         <div class="pdct-col">
             {% include "product-gallery.twig" %}
 
-            <p class="pdct__p pdct__p--xs">Есть вопросы по товару? Обсудим сейчас:
-                <span>i i i</span>
+            <p class="pdct__p pdct__p--xs mb-2">Есть вопросы по товару? Обсудим сейчас:
+                <span class="d-inline-flex ml-2">
+                    <a href="#" class="mr-1">{% include "../../svg/i-viber.svg" %}</a>
+                    <a href="#" class="mr-1">{% include "../../svg/i-whatsapp.svg" %}</a>
+                    <a href="#" class="mr-1">{% include "../../svg/i-chat.svg" %}</a>
+                </span>
             </p>
         </div>
 
@@ -52,7 +56,7 @@
                 </li>
                 <li>
                     <a href="#" class="pdct__link">
-                        <span>ico</span>
+                        <span>{% include "../../svg/i-23.svg" %}</span>
                         Поделиться</a>
                 </li>
             </ul>
@@ -72,7 +76,9 @@
     <div class="pdct-bottom">
         <div class="pdct-bottom-col">
             <div class="d-flex">
-                <div class="flex-shrink-0 mr-1">i</div>
+                <div class="flex-shrink-0 mr-1">
+                    {% include "../../svg/i-19.svg" %}
+                </div>
                 <div class="flex-grow-1">
                     <p class="pdct__p txt-semi-bold">Гарантия на товар 1 год</p>
                     <p class="pdct__p pdct__p--xs">Согласитесь, что часто, когда мы видим какой-либо новый товар, то
@@ -82,7 +88,9 @@
         </div>
         <div class="pdct-bottom-col">
             <div class="d-flex">
-                <div class="flex-shrink-0 mr-1">i</div>
+                <div class="flex-shrink-0 mr-1">
+                    {% include "../../svg/i-20.svg" %}
+                </div>
                 <div class="flex-grow-1">
                     <p class="pdct__p txt-semi-bold">Возврат денег в течении 30 дней - без вопросов!</p>
                     <p class="pdct__p pdct__p--xs">Если вы получили набор и сразу при

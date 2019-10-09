@@ -53,7 +53,9 @@
                     <li>
                         <a href="#" class="review-video">
                             <span class="review-video__bg" style="background-image: url('{{ item.bg }}')">
-                                <span class="review-video__ico">ico</span>
+                                <span class="review-video__ico">
+                                    {% include "./inc/svg/i-play.svg" %}
+                                </span>
                             </span>
                             <span class="review-video__p">{{ item.txt }}</span>
                         </a>
