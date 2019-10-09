@@ -27,6 +27,7 @@
   &-col {
     &--frst {
       width: 50%;
+      margin-bottom: 15px;
     }
     &--scnd {
       width: 22%;
@@ -115,6 +116,10 @@
       left: auto;
       right: 5px;
     }
+  }
+
+  &__ico {
+    cursor: pointer;
   }
 
   .card-pdct-tags__item {

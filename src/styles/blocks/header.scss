@@ -37,8 +37,26 @@
       color: $blue;
     }
 
-    &__icon {
+    &__txt {
       display: block;
+    }
+
+    &__icon {
+      position: relative;
+      display: inline-block;
+
+      &__txt {
+        position: absolute;
+        z-index: 5;
+        top: -5px;
+        right: -14px;
+        background-color: $blue;
+        padding: 3px 4px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 12px;
+        line-height: 10px;
+      }
     }
   }
 
