@@ -16,5 +16,18 @@
     &:hover {
       text-decoration: underline;
     }
+
+    &__ico-heart {
+      svg {
+        width: 16px !important;
+        height: 12px !important;
+      }
+    }
+    &__ico-comment {
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      margin-right: 5px;
+    }
   }
 }

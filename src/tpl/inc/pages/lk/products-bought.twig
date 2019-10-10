@@ -77,14 +77,33 @@
                     </div>
                     <div class="card-pdct-footer mb-3">
                         <p class="card-pdct__p mr-2">{{ item.txtOrder }}</p>
-                        <div>i i i i i</div>
+                        <div class="card-pdct__stars">
+                            <div class="card-pdct__star">
+                                {% include "../../svg/i-star.svg" %}
+                            </div>
+                            <div class="card-pdct__star">
+                                {% include "../../svg/i-star.svg" %}
+                            </div>
+                            <div class="card-pdct__star">
+                                {% include "../../svg/i-star.svg" %}
+                            </div>
+                            <div class="card-pdct__star">
+                                {% include "../../svg/i-star.svg" %}
+                            </div>
+                            <div class="card-pdct__star is-gray">
+                                {% include "../../svg/i-star.svg" %}
+                            </div>
+                        </div>
                     </div>
                     <div class="mw-230 mb-2">
                         <a href="#" class="pdct__btn mb-1">Заказать</a>
                         <a href="#" class="pdct__btn pdct__btn--white">В корзину</a>
                     </div>
                     <div class="pl-2">
-                        <a href="#" class="link-custom txt-medium">i Оставить отзыв</a>
+                        <a href="#" class="link-custom txt-medium">
+                            <span class="link-custom__ico-comment">{% include "../../svg/i-comment.svg" %}</span>
+                            Оставить отзыв
+                        </a>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,26 @@
         pointer-events: none;
       }
     }
+
+    &[aria-expanded=true] {
+      .aside-nav__link__ico {
+        transform: rotate(180deg);
+      }
+    }
+
+    &__ico {
+      display: inline-block;
+      transition: .15s ease-in;
+
+      svg {
+        width: 15px !important;
+        height: 8px !important;
+
+        path {
+          fill: $blue !important;
+        }
+      }
+    }
   }
 
   .list-default {

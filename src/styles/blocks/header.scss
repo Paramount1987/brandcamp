@@ -144,6 +144,14 @@
     text-transform: uppercase;
     color: $black;
     font-size: 12px;
+
+    &__ico {
+      svg {
+        width: 13px !important;
+        height: 7px !important;
+        opacity: .6;
+      }
+    }
   }
 
   &__btn-nav {
