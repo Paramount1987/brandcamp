@@ -18,11 +18,23 @@
 
         <div class="mb-5">
             <h3 class="h3">Промокоды</h3>
-            <form class="ordr-step-form mb-1">
-                <input type="text" placeholder="Укажите кодовое слово или сертификат" class="ordr-step-form__input">
-                <button class="ordr-step-form__btn is-disabled">Активировать</button>
+            <form class="ordr-step-form mb-1 js-form-promocode">
+                <div class="ordr-step-form-col">
+                    <input type="text" placeholder="Укажите кодовое слово или сертификат" class="ordr-step-form__input js-input">
+                </div>
+                <button class="ordr-step-form__btn is-disabled js-btn">Активировать</button>
             </form>
             <p>Кодовое слово или сертификат позволяют получить особые условия покупки.</p>
+        </div>
+
+        <div class="mb-5">
+            <form class="ordr-step-form mb-1 js-form-promocode">
+                <div class="ordr-step-form-col">
+                    <p class="txt-red txt-fs-13 txt-right pr-sm-1">Не верно ввели кодовое слово или сертификат</p>
+                    <input type="text" placeholder="" class="ordr-step-form__input js-input is-error">
+                </div>
+                <button class="ordr-step-form__btn is-disabled js-btn">Активировать</button>
+            </form>
         </div>
 
         <div>

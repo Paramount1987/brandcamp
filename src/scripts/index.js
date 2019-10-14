@@ -19,7 +19,9 @@ require('./components/sliders/pics-slider');
 require('./components/sliders/pdct-sliders');
 require('./components/reviews/review-insta');
 require('./components/modals');
+
 require('./components/form');
+require('./components/form/form-promocode');
 
 import Nav from './components/nav';
 
