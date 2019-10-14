@@ -5,9 +5,20 @@
   padding: 30px;
   background-color: $white;
 
+  &--md {
+    max-width: 650px;
+  }
+
   &__title {
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: 600;
+  }
+
+  @include media-breakpoint-up(md) {
+
+    &--md {
+      padding: 30px 60px;
+    }
   }
 }
