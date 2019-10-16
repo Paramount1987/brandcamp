@@ -39,8 +39,7 @@
   &__up,
   &__down {
     display: flex;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 5px 10px 0 10px;
     border: 1px solid #c2c2c2;
     transition: .15s ease-in;
     cursor: pointer;

@@ -1,6 +1,6 @@
 {% set items = [
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/L5.jpg'],
         tags: [{txt: 'новинка', className: 'bg-green'}],
         prices: [{txt: '3 450 ₽', className: ''}],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
@@ -8,7 +8,7 @@
         txtOrder: '1837 заказов'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/sredstvo_dla_rodjiga.jpg'],
         tags: [{txt: 'новинка', className: 'bg-green'}],
         prices: [{txt: '3 450 ₽', className: ''}],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
@@ -16,7 +16,7 @@
         txtOrder: '1837 заказов'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_kor.jpg'],
         tags: [{txt: 'новинка', className: 'bg-green'}],
         prices: [{txt: '3 450 ₽', className: ''}],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
@@ -24,7 +24,7 @@
         txtOrder: '1837 заказов'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_cher.jpg'],
         tags: [{txt: 'новинка', className: 'bg-green'}],
         prices: [{txt: '3 450 ₽', className: ''}],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
@@ -32,7 +32,7 @@
         txtOrder: '1837 заказов'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_kor.jpg'],
         tags: [{txt: 'новинка', className: 'bg-green'}],
         prices: [{txt: '3 450 ₽', className: ''}],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
@@ -53,7 +53,7 @@
                                 <div class="swiper-wrapper">
                                     {% for pic in item.pics %}
                                         <div class="swiper-slide">
-                                            <img src="https://via.placeholder.com/260x260" alt="" class="card-pdct__pic">
+                                            <img src="{{ pic }}" alt="" class="card-pdct__pic">
                                         </div>
                                     {% endfor %}
                                 </div>

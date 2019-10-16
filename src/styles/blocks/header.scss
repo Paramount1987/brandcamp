@@ -167,6 +167,12 @@
   &__btn-nav {
     display: none;
   }
+
+  &-logo {
+    img {
+      width: 150px;
+    }
+  }
 }
 
 .header-form {
@@ -252,7 +258,7 @@
 
     &__btn-nav {
       display: inline-block;
-      margin-right: 30px;
+      margin-right: 20px;
       padding: 0;
       background: none;
       border: none;
@@ -306,6 +312,12 @@
 
     &-catalog {
       transform: translate(0, 7px);
+    }
+
+    &-logo {
+      img {
+        width: 249px;
+      }
     }
   }
 }

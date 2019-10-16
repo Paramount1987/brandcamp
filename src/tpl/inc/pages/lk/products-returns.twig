@@ -1,26 +1,26 @@
 {% set items = [
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/sredstvo_dla_rodjiga.jpg'],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
         descr: 'Комплектация: Special series'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/L5.jpg'],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
         descr: ''
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_kor.jpg'],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
         descr: 'Комплектация: Special series'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_cher.jpg'],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
         descr: 'Комплектация: Special series'
     },
     {
-        pics: ['https://via.placeholder.com/260x260'],
+        pics: ['images/temp/botinki_kor.jpg'],
         title: 'BRANDCAMP FIRE STICK - 4 мощное средство для розжига',
         descr: 'Комплектация: Special series'
     }
@@ -38,7 +38,7 @@
                             <div class="swiper-wrapper">
                                 {% for pic in item.pics %}
                                 <div class="swiper-slide">
-                                    <img src="https://via.placeholder.com/260x260" alt="" class="card-pdct__pic">
+                                    <img src="{{ pic }}" alt="" class="card-pdct__pic">
                                 </div>
                                 {% endfor %}
                             </div>
