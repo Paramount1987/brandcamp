@@ -12,6 +12,10 @@
     background-color: #c8c8c8;
     opacity: 1;
 
+    &:only-child {
+      display: none;
+    }
+
     &-active {
       background-color: #252525
     }
