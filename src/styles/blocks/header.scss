@@ -140,12 +140,22 @@
   }
 
   &__link-lng {
+    position: relative;
+    top: 3px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
     color: $black;
     font-size: 12px;
+    font-weight: 500;
+
+    > img {
+      margin-right: 4px;
+    }
 
     &__ico {
+      margin-left: 3px;
       svg {
         width: 13px !important;
         height: 7px !important;
