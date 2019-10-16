@@ -170,6 +170,10 @@ $blue: #5c61e3;
         width: 95px;
         order: 1;
         flex-shrink: 0;
+
+        &.is-lg {
+          width: 145px;
+        }
       }
 
       &.col-2 {

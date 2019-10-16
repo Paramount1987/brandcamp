@@ -1,0 +1,41 @@
+.lk-review-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 30px;
+    padding: 25px 20px;
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.lk-review-item {
+  display: flex;
+
+  &__left {
+    width: 230px;
+    margin-right: 40px;
+  }
+
+  &__right {
+    flex-grow: 1;
+  }
+
+  .pics-slider .swiper-pagination {
+    bottom: -5px;
+  }
+
+  .pdct-review__pic {
+    margin: 25px 0 0 25px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    flex-wrap: wrap;
+
+    &__left {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

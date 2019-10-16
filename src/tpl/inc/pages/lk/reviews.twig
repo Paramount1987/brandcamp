@@ -1,0 +1,160 @@
+{% set pics = ['https://via.placeholder.com/230x230', 'https://via.placeholder.com/230x230', 'https://via.placeholder.com/230x230'] %}
+
+<div class="mb-3">
+    <p class="d-flex mb-1">
+        <img src="https://via.placeholder.com/28x20" alt="" width="28" height="20">
+        <span class="ml-1">Россия</span>
+    </p>
+    <p class="txt-fs-18 txt-medium">Иванов Иван</p>
+    <p class="txt-fs-14 txt-medium">Чебоксары, 23 года</p>
+</div>
+
+<ul class="lk-review-list">
+    <li>
+        <div class="lk-review-item">
+            <div class="lk-review-item__left">
+                <div class="swiper-container pics-slider mb-3 js-pics-slider">
+                    <div class="swiper-wrapper">
+                        {% for pic in pics %}
+                        <div class="swiper-slide">
+                            <img src="{{ pic }}" alt="" class="card-pdct__pic">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="d-flex">
+                    <p class="txt-medium mr-2">1 июля 2019</p>
+                    <div class="card-pdct__stars">
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lk-review-item__right">
+                <div class="mb-1">
+                    <p class="txt-fs-15 txt-semi-bold mb-1">Тактические ботинки Brandcamp B1 влагозащитные</p>
+                    <p class="txt-gray">Ожидает бубликации</p>
+                    <p class="txt-gray">15.07.2019</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Достоинства:
+                    </p>
+                    <p>Всё очень классно</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Недостатки:
+                    </p>
+                    <p>Нету</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Комментарии:
+                    </p>
+                    <p>пользуюсь по сегодняшний день пользуюсь по сегодняшний день</p>
+                </div>
+
+                <div class="d-flex flex-wrap align-items-end">
+                    <div class="pdct-review__pic-list">
+                        <img src="https://via.placeholder.com/70x70" alt="" class="pdct-review__pic">
+                        <img src="https://via.placeholder.com/70x70" alt="" class="pdct-review__pic">
+                    </div>
+                    <div class="ml-auto">
+                        <a href="#" class="link-custom js-remove-review">Удалить отзыв</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="lk-review-item">
+            <div class="lk-review-item__left">
+                <div class="swiper-container pics-slider mb-3 js-pics-slider">
+                    <div class="swiper-wrapper">
+                        {% for pic in pics %}
+                        <div class="swiper-slide">
+                            <img src="{{ pic }}" alt="" class="card-pdct__pic">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="d-flex">
+                    <p class="txt-medium mr-2">1 июля 2019</p>
+                    <div class="card-pdct__stars">
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                        <div class="card-pdct__star">
+                            {% include "../../svg/i-star.svg" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lk-review-item__right">
+                <div class="mb-1">
+                    <p class="txt-fs-15 txt-semi-bold mb-1">Тактические ботинки Brandcamp B1 влагозащитные</p>
+                    <p class="txt-gray">Ожидает бубликации</p>
+                    <p class="txt-gray">15.07.2019</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Достоинства:
+                    </p>
+                    <p>Всё очень классно</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Недостатки:
+                    </p>
+                    <p>Нету</p>
+                </div>
+                <div class="mb-1">
+                    <p class="txt-fl-left txt-semi-bold mr-1">Комментарии:
+                    </p>
+                    <p>пользуюсь по сегодняшний день пользуюсь по сегодняшний день</p>
+                </div>
+
+                <div class="d-flex flex-wrap align-items-end">
+                    <div class="pdct-review__pic-list">
+                        <img src="https://via.placeholder.com/70x70" alt="" class="pdct-review__pic">
+                        <img src="https://via.placeholder.com/70x70" alt="" class="pdct-review__pic">
+                    </div>
+                    <div class="ml-auto">
+                        <div>
+                            <p class="txt-fs-12 mb-1">Вы уверены?</p>
+                            <p>
+                                <a href="#" class="link-custom mr-2">Нет</a>
+                                <a href="#" class="link-custom">Да</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
