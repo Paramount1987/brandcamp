@@ -37,13 +37,9 @@
     transition: .15s ease-in;
 
     &--blue {
-      background-color: $blue;
-      border-color: $blue;
+      background-color: darken($blue, 15%);
+      border-color: darken($blue, 15%);
       color:$white;
-
-      &:hover {
-        background-color: darken($blue, 15%);
-      }
     }
 
     &--yellow {

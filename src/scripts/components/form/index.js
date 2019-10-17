@@ -1,5 +1,11 @@
 $(document).ready(() => {
-  $('.js-select-form').select2({
-    minimumResultsForSearch: Infinity,
+  $('.js-select-form').each(function init() {
+    const $el = $(this);
+    const theme = $el.data('theme') || 'default';
+
+    $el.select2({
+      minimumResultsForSearch: Infinity,
+      theme,
+    });
   });
 });
