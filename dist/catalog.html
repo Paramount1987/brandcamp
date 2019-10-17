@@ -6,7 +6,7 @@
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>brandcamp</title>
-	<link rel="stylesheet" href="css/style.css?1571260179233">
+	<link rel="stylesheet" href="css/style.css?1571290713479">
 </head>
 <body>
 
@@ -111,7 +111,7 @@
                 <div class="header-col header-col--hl">
                     <ul class="header__list">
                         <li>
-                            <a href="#" class="header-link">
+                            <a href="#" data-rel="#aside-nav" class="header-link js-aside-link">
                                 <span class="header-link__icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
     <path fill="currentColor" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,1a11,11,0,0,1,8.46,18c-1.09-.46-3.68-1.36-5.29-1.83-.14,0-.16,0-.16-.62a3.28,3.28,0,0,1,.38-1.34,6.89,6.89,0,0,0,.53-1.82,4.09,4.09,0,0,0,.79-1.9,2.51,2.51,0,0,0,0-1.6l0-.1a10.41,10.41,0,0,1,.18-2.24,4.11,4.11,0,0,0-.86-3A4.43,4.43,0,0,0,12.59,3h-1A4.4,4.4,0,0,0,8.23,4.61a4.1,4.1,0,0,0-.86,3,10.42,10.42,0,0,1,.18,2.24l0,.1a2.51,2.51,0,0,0,0,1.6,4.1,4.1,0,0,0,.79,1.9,6.83,6.83,0,0,0,.53,1.82A3.22,3.22,0,0,1,9,16.6c0,.57,0,.58-.15.62-1.66.49-4.29,1.44-5.28,1.87A11,11,0,0,1,12,1ZM4.32,19.86c1.13-.46,3.37-1.26,4.84-1.7.86-.27.86-1,.86-1.57a4.3,4.3,0,0,0-.31-1.79,5.63,5.63,0,0,1-.46-1.67.51.51,0,0,0-.17-.33,3,3,0,0,1-.61-1.49c-.14-.72-.08-.88,0-1a1.83,1.83,0,0,0,.07-.2,9.76,9.76,0,0,0-.16-2.68A3.13,3.13,0,0,1,9,5.23,3.42,3.42,0,0,1,11.61,4h.95a3.43,3.43,0,0,1,2.62,1.23,3.14,3.14,0,0,1,.67,2.17,9.84,9.84,0,0,0-.16,2.68,2,2,0,0,0,.07.2c.06.15.12.31,0,1a3,3,0,0,1-.61,1.49.5.5,0,0,0-.17.33,5.66,5.66,0,0,1-.46,1.67A4.24,4.24,0,0,0,14,16.58c0,.58,0,1.3.87,1.58,1.41.42,3.66,1.19,4.86,1.66a11,11,0,0,1-15.41.05Z"/>
@@ -302,7 +302,7 @@
 
 <section class="container section-row mb-4">
     <div class="section-col section-col--sm">
-        <div class="aside-nav">
+        <div id="aside-nav" class="aside-nav js-aside-nav">
     <h3 class="aside-nav__h3">Каталог</h3>
     <ul class="list-default">
         <li>
@@ -366,30 +366,38 @@
         <div class="mb-5">
             <h3 class="h3">Ножи</h3>
             
+
 <!-- Swiper -->
 <div class="multy-slider multy-slider--outside">
     <div class="swiper-container js-multy-slider" data-perviewlg="3" data-perviewmd="2">
         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/sredstvo_dla_rodjiga.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -400,51 +408,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/L5.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p"></p>
                         </div>
@@ -455,51 +475,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_kor.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -510,51 +542,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_cher.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -565,51 +609,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_kor.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -620,32 +676,38 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    </div>
+            
+        </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -656,30 +718,38 @@
         <div class="mb-5">
             <h3 class="h3">Набор выживания</h3>
             
+
 <!-- Swiper -->
 <div class="multy-slider multy-slider--outside">
     <div class="swiper-container js-multy-slider" data-perviewlg="3" data-perviewmd="2">
         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/sredstvo_dla_rodjiga.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -690,51 +760,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/L5.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p"></p>
                         </div>
@@ -745,51 +827,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_kor.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -800,51 +894,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_cher.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -855,51 +961,63 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                            <div class="swiper-slide">
+            
+                <div class="swiper-slide">
                     <div class="card-pdct">
                         <div class="card-pdct-top">
                             <div class="swiper-container pics-slider js-pics-slider">
                                 <div class="swiper-wrapper">
-                                                                            <div class="swiper-slide">
+                                    
+                                        <div class="swiper-slide">
                                             <img src="images/temp/botinki_kor.jpg" alt="" class="card-pdct__pic">
                                         </div>
-                                                                    </div>
+                                    
+                                </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
                         <div class="card-pdct-body">
                             <div class="card-pdct-tags">
-                                                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-tags__item bg-orange">хит продаж</span>
+                                
+                            </div>
                             <div class="card-pdct-prices">
-                                                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
-                                                            </div>
+                                
+                                    <span class="card-pdct-prices__item ">3 800 ₽</span>
+                                
+                            </div>
                             <a href="#" class="card-pdct__title">BRANDCAMP FIRE STICK - 4 мощное средство для розжига</a>
                             <p class="card-pdct__p">Комплектация: Special series</p>
                         </div>
@@ -910,32 +1028,38 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                                 <div class="card-pdct__star is-gray">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16.63 15.8">
     <path fill="currentColor" d="M16.63,6.05,10.88,5.2,8.33,0,5.75,5.19,0,6l4.15,4.06-1,5.71L8.3,13.09l5.13,2.71-1-5.71Z"/>
 </svg>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    </div>
+            
+        </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -948,89 +1072,118 @@
 
 
 
+
 <footer class="footer">
     <div class="container">
         <div class="footer-inner">
             <div class="footer-row">
                 <div class="footer-col footer-col--md">
-                                        <div class="footer-col__nav">
+                    
+                    <div class="footer-col__nav">
                         <h4 class="footer-nav__title">Каталог</h4>
                         <ul class="footer-nav">
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Все товары</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Снаряжение</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Обувь</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Одежда</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Ремесленные товары</a>
                             </li>
-                                                    </ul>
+                            
+                        </ul>
                     </div>
-                                        <div class="footer-col__nav">
+                    
+                    <div class="footer-col__nav">
                         <h4 class="footer-nav__title">Личный кабинет</h4>
                         <ul class="footer-nav">
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Войти</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Регистрация</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Корзина</a>
                             </li>
-                                                    </ul>
+                            
+                        </ul>
                     </div>
-                                        <div class="footer-col__nav">
+                    
+                    <div class="footer-col__nav">
                         <h4 class="footer-nav__title">Помощь</h4>
                         <ul class="footer-nav">
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Как оплатить?</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Как сделать заказ?</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Доставка</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Возврат</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Гарантия</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Вопрос-ответ</a>
                             </li>
-                                                    </ul>
+                            
+                        </ul>
                     </div>
-                                        <div class="footer-col__nav">
+                    
+                    <div class="footer-col__nav">
                         <h4 class="footer-nav__title">О нас</h4>
                         <ul class="footer-nav">
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">О компании</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Блог</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Новости</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Сотрудничество</a>
                             </li>
-                                                        <li>
+                            
+                            <li>
                                 <a href="#" class="footer-nav__link">Контакты</a>
                             </li>
-                                                    </ul>
+                            
+                        </ul>
                     </div>
-                                    </div>
+                    
+                </div>
 
                 <div class="footer-col footer-col--lg">
                     <a href="#" class="footer__logo">
@@ -1100,6 +1253,6 @@
 </footer>
 
 
-<script src="js/index.js?1571260179238"></script>
+<script src="js/index.js?1571290713483"></script>
 </body>
 </html>

@@ -21,10 +21,15 @@ const Nav = {
   },
 
   navLinkHandler() {
-    $('.js-nav-link, .js-nav-lng').click(function handler(e) {
-      e.preventDefault();
+    $('.js-nav-link, .js-nav-lng, .js-aside-link').click(function handler(e) {
       const $el = $(this);
-      const $target = $($el.attr('href'));
+      const isNavLink = $el.hasClass('js-aside-link');
+
+      if (isNavLink && !window.matchMedia("(max-width: 767px)").matches) {
+        return;
+      }
+      e.preventDefault();
+      const $target = isNavLink ? $($el.data('rel')) : $($el.attr('href'));
 
       $target.slideToggle(200);
     });
@@ -54,6 +59,10 @@ const Nav = {
       }
       if (!$target.closest('.js-nav-link').length) {
         $('#nav-about').slideUp();
+      }
+      if (!$target.closest('.js-aside-nav').length && !$target.closest('.js-aside-link').length
+        && window.matchMedia("(max-width: 767px)").matches) {
+        $('#aside-nav').slideUp();
       }
     });
   },
