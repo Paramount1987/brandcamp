@@ -61,7 +61,77 @@
     </div>
 </div>
 
-<form class="mb-2">
+<form id="form-review" class="form form--review p-2 mb-2 p-sm-4">
+    <button type="button" class="btn-close js-btn-toggle" data-rel="#form-filter-review">
+        {% include "../../svg/i-close.svg" %}
+    </button>
+    <div class="d-flex align-items-center mb-3">
+        <h4 class="h4 mb-0 mr-2">Оценка</h4>
+        <div class="card-pdct__stars">
+            <div class="card-pdct__star is-gray is-lg">
+                {% include "../../svg/i-star.svg" %}
+            </div>
+            <div class="card-pdct__star is-gray is-lg">
+                {% include "../../svg/i-star.svg" %}
+            </div>
+            <div class="card-pdct__star is-gray is-lg">
+                {% include "../../svg/i-star.svg" %}
+            </div>
+            <div class="card-pdct__star is-gray is-lg">
+                {% include "../../svg/i-star.svg" %}
+            </div>
+            <div class="card-pdct__star is-gray is-lg">
+                {% include "../../svg/i-star.svg" %}
+            </div>
+        </div>
+    </div>
+    <h4 class="h4">Отзыв</h4>
+    <div class="form-group">
+        <label for="" class="form__label d-block txt-semi-bold">Достоинства</label>
+        <input type="text" placeholder="Что вам понравилось?" class="ordr-step-form__input w-100p">
+    </div>
+    <div class="form-group">
+        <label for="" class="form__label d-block txt-semi-bold">Недостатки</label>
+        <input type="text" placeholder="Что не оправдало ваших ожиданий?" class="ordr-step-form__input w-100p">
+    </div>
+    <div class="form-group">
+        <label for="" class="form__label d-block txt-semi-bold">Комментарий</label>
+        <input type="text" placeholder="Другие впечатления о товаре" class="ordr-step-form__input w-100p">
+    </div>
+
+    <div class="mt-4 mb-2">
+        <p class="txt-fs-15 txt-medium mb-1">Иванов Иван, 33 года, Чебоксары</p>
+
+        <div class="custom-checkbox mr-2">
+            <input type="checkbox" class="custom-control-checkbox" id="custom2">
+            <label class="custom-control-label pl-1 txt-fs-12" for="custom2">Оставить отзыв анонимно</label>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <div class="d-flex flex-wrap align-items-center mb-1">
+            <div class="d-flex mr-2">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" multiple>
+                    <label class="custom-file-label" for="inputGroupFile01">Загрузите фотографии</label>
+                </div>
+            </div>
+            <p class="txt-fs-12">или перетащите в форму</p>
+        </div>
+        <p class="txt-fs-12">5 фото, jpg, png</p>
+    </div>
+
+    <div>
+        <button class="pdct__btn mb-1 w-175">Оставить отзыв</button>
+        <p class="txt-fs-12">
+            Вопросы по качеству товара, возврату и выполнению заказа отправляйте в службу
+            <a href="#" class="txt-black">по работе с клиентами</a>.
+        </p>
+        <p class="txt-fs-12"><a href="#" class="txt-black">Правила публикации</a></p>
+    </div>
+</form>
+
+<form id="form-filter-review" class="form mb-2">
     <div class="d-flex flex-wrap align-items-center">
         <div class="w-180 mb-1 mr-3">
             <select name="" id="" class="js-select-form">
@@ -70,7 +140,7 @@
                 <option value="2">опция 3</option>
             </select>
         </div>
-        <button class="mb-1 pdct__btn w-175">Написать отзыв</button>
+        <button type="button" class="mb-1 pdct__btn w-175 js-btn-toggle" data-rel="#form-review">Написать отзыв</button>
     </div>
 </form>
 

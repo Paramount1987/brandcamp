@@ -32,6 +32,27 @@ $gray: #757575;
       color: $white;
     }
   }
+
+  &-close {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #adadad;
+    outline: none !important;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements

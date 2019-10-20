@@ -98,5 +98,10 @@ $gray_p: #505050;
     &.is-gray {
       color: #c8c8c8;
     }
+
+    &.is-lg svg {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

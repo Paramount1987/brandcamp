@@ -8,4 +8,14 @@ $(document).ready(() => {
       theme,
     });
   });
+
+  $('.js-btn-toggle').click(function clickBtn() {
+    const $btn = $(this);
+
+    const $formParent = $btn.closest('.form');
+    const $formTarget = $($btn.data('rel'));
+
+    $formParent.slideUp();
+    $formTarget.slideDown();
+  });
 });
