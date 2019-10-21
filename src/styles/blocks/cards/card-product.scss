@@ -12,6 +12,7 @@ $gray_p: #505050;
 
   &-footer {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__pic {
@@ -48,7 +49,7 @@ $gray_p: #505050;
 
     &__item {
       color: $black;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
@@ -63,7 +64,7 @@ $gray_p: #505050;
     font-weight: 550;
     transition: .15s ease-in;
 
-    &:hover {
+    &:not(.no-link):hover {
       color: $blue;
     }
 
@@ -102,6 +103,15 @@ $gray_p: #505050;
     &.is-lg svg {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+
+    &-prices {
+      &__item {
+        font-size: 22px;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 .accordion {
-  border-top: 3px solid #404040;
+  border-top: 3px solid #000;
   margin: 0 -15px;
 
   &-horizontal {
@@ -32,7 +32,7 @@
     cursor: pointer;
 
     &[aria-expanded="true"] {
-      background-color: #404040;
+      background-color: #000;
       color: $white;
     }
   }
