@@ -10,6 +10,7 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 0 0 -30px;
     padding: 0;
     list-style: none;
@@ -41,6 +42,7 @@
   @include media-breakpoint-up(sm) {
 
     &-list {
+      justify-content: flex-start;;
       margin-left: -4%;
 
       > li {
